@@ -1,20 +1,15 @@
 import React, { useCallback, useRef } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-
 import { FiArrowLeft, FiMail, FiLock, FiUser } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { FormHandles } from '@unform/core';
-
 import logoImg from '../../assets/logo.svg';
-
 import { useToast } from '../../context/ToastContext';
-
 import api from '../../services/api';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import getValidationErrors from '../../utils/getValidationErrors';
-
 import { Container, Content, Background, AnimationContainer } from './styles';
 
 interface SignUpFormData {
